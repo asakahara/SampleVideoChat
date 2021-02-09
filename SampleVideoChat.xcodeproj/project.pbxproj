@@ -13,6 +13,7 @@
 		0E7AE03325D248ED00C8CB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AE03125D248ED00C8CB6C /* Main.storyboard */; };
 		0E7AE03525D248EF00C8CB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AE03425D248EF00C8CB6C /* Assets.xcassets */; };
 		0E7AE03825D248EF00C8CB6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AE03625D248EF00C8CB6C /* LaunchScreen.storyboard */; };
+		C77951E3AB031709900823DE /* Pods_SampleVideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75744A1CBE4A4FC5CBC7F229 /* Pods_SampleVideoChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0E7AE03425D248EF00C8CB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7AE03725D248EF00C8CB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E7AE03925D248EF00C8CB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245F5C2E64E852959A556FC0 /* Pods-SampleVideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleVideoChat.debug.xcconfig"; path = "Target Support Files/Pods-SampleVideoChat/Pods-SampleVideoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		75744A1CBE4A4FC5CBC7F229 /* Pods_SampleVideoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleVideoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0E19AD96BAC3CCADC8B6C1 /* Pods-SampleVideoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleVideoChat.release.xcconfig"; path = "Target Support Files/Pods-SampleVideoChat/Pods-SampleVideoChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77951E3AB031709900823DE /* Pods_SampleVideoChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0E7AE02A25D248ED00C8CB6C /* SampleVideoChat */,
 				0E7AE02925D248ED00C8CB6C /* Products */,
+				6DB3903237A8C08BC5AFE84F /* Pods */,
+				731055E014F9245E6C5BEAC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SampleVideoChat;
 			sourceTree = "<group>";
 		};
+		6DB3903237A8C08BC5AFE84F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				245F5C2E64E852959A556FC0 /* Pods-SampleVideoChat.debug.xcconfig */,
+				BD0E19AD96BAC3CCADC8B6C1 /* Pods-SampleVideoChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		731055E014F9245E6C5BEAC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75744A1CBE4A4FC5CBC7F229 /* Pods_SampleVideoChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E7AE03C25D248EF00C8CB6C /* Build configuration list for PBXNativeTarget "SampleVideoChat" */;
 			buildPhases = (
+				58AB6FE358D51F6C17EF33C6 /* [CP] Check Pods Manifest.lock */,
 				0E7AE02425D248ED00C8CB6C /* Sources */,
 				0E7AE02525D248ED00C8CB6C /* Frameworks */,
 				0E7AE02625D248ED00C8CB6C /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58AB6FE358D51F6C17EF33C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleVideoChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E7AE02425D248ED00C8CB6C /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		0E7AE03D25D248EF00C8CB6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245F5C2E64E852959A556FC0 /* Pods-SampleVideoChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		0E7AE03E25D248EF00C8CB6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0E19AD96BAC3CCADC8B6C1 /* Pods-SampleVideoChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
