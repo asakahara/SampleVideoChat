@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E7AE02C25D248ED00C8CB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AE02B25D248ED00C8CB6C /* AppDelegate.swift */; };
 		0E7AE02E25D248ED00C8CB6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AE02D25D248ED00C8CB6C /* SceneDelegate.swift */; };
-		0E7AE03025D248ED00C8CB6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AE02F25D248ED00C8CB6C /* ViewController.swift */; };
+		0E7AE03025D248ED00C8CB6C /* VideoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AE02F25D248ED00C8CB6C /* VideoChatViewController.swift */; };
 		0E7AE03325D248ED00C8CB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AE03125D248ED00C8CB6C /* Main.storyboard */; };
 		0E7AE03525D248EF00C8CB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AE03425D248EF00C8CB6C /* Assets.xcassets */; };
 		0E7AE03825D248EF00C8CB6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AE03625D248EF00C8CB6C /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		0E7AE02825D248ED00C8CB6C /* SampleVideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleVideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7AE02B25D248ED00C8CB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7AE02D25D248ED00C8CB6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E7AE02F25D248ED00C8CB6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E7AE02F25D248ED00C8CB6C /* VideoChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatViewController.swift; sourceTree = "<group>"; };
 		0E7AE03225D248ED00C8CB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E7AE03425D248EF00C8CB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7AE03725D248EF00C8CB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			children = (
 				0E7AE02B25D248ED00C8CB6C /* AppDelegate.swift */,
 				0E7AE02D25D248ED00C8CB6C /* SceneDelegate.swift */,
-				0E7AE02F25D248ED00C8CB6C /* ViewController.swift */,
+				0E7AE02F25D248ED00C8CB6C /* VideoChatViewController.swift */,
 				0E7AE03125D248ED00C8CB6C /* Main.storyboard */,
 				0E7AE03425D248EF00C8CB6C /* Assets.xcassets */,
 				0E7AE03625D248EF00C8CB6C /* LaunchScreen.storyboard */,
@@ -80,7 +80,6 @@
 				245F5C2E64E852959A556FC0 /* Pods-SampleVideoChat.debug.xcconfig */,
 				BD0E19AD96BAC3CCADC8B6C1 /* Pods-SampleVideoChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -188,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7AE03025D248ED00C8CB6C /* ViewController.swift in Sources */,
+				0E7AE03025D248ED00C8CB6C /* VideoChatViewController.swift in Sources */,
 				0E7AE02C25D248ED00C8CB6C /* AppDelegate.swift in Sources */,
 				0E7AE02E25D248ED00C8CB6C /* SceneDelegate.swift in Sources */,
 			);
