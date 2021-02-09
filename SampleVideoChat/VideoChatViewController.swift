@@ -26,7 +26,7 @@ class VideoChatViewController: UIViewController {
         return OTPublisher(delegate: self, settings: settings)
     }()
 
-    var subscriber: OTSubscriber?
+    private var subscriber: OTSubscriber?
 
     override func viewDidLoad() {
         super.viewDidLoad()
