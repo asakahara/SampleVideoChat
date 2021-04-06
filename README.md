@@ -17,3 +17,20 @@ API KEY、Session ID、Tokenを取得するにはVonage Video APIのアカウン
 https://tokbox.com/account/user/signup
 
 上記項目を設定後にビルド＆実行してください。
+
+# ビルド手順
+
+1. bundlerのインストール
+```
+gem install bundler
+```
+
+2. CocoaPodsのインストール
+```
+bundle install
+```
+
+3. 依存ライブラリのインストール
+```
+bundle exec pod install
+```
